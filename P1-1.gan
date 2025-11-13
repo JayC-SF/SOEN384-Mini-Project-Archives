@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?><project name="Untitled Gantt Project" company="" webLink="http://" view-date="2025-09-29" view-index="0" gantt-divider-location="588" resource-divider-location="300" version="3.3.3316" locale="en_US">
+    <description/>
+    <view zooming-state="default:3" id="gantt-chart">
+        <field id="tpd3" name="Name" width="287" order="0"/>
+        <field id="tpd6" name="Duration" width="61" order="1"/>
+        <field id="tpc1" name="Budget ($)" width="84" order="2"/>
+        <field id="tpd4" name="Begin date" width="74" order="3"/>
+        <field id="tpd5" name="End date" width="81" order="4"/>
+        <option id="filter.completedTasks" value="false"/>
+        <option id="filter.dueTodayTasks" value="false"/>
+        <option id="filter.overdueTasks" value="false"/>
+        <option id="filter.inProgressTodayTasks" value="false"/>
+    </view>
+    <view id="resource-table">
+        <field id="0" name="Name" width="210" order="0"/>
+        <field id="1" name="Default role" width="86" order="1"/>
+    </view>
+    <!-- -->
+    <calendars>
+        <day-types>
+            <day-type id="0"/>
+            <day-type id="1"/>
+            <default-week id="1" name="default" sun="1" mon="0" tue="0" wed="0" thu="0" fri="0" sat="1"/>
+            <only-show-weekends value="true"/>
+            <overriden-day-types/>
+            <days/>
+        </day-types>
+    </calendars>
+    <tasks empty-milestones="true">
+        <taskproperties>
+            <taskproperty id="tpd0" name="type" type="default" valuetype="icon"/>
+            <taskproperty id="tpd1" name="priority" type="default" valuetype="icon"/>
+            <taskproperty id="tpd2" name="info" type="default" valuetype="icon"/>
+            <taskproperty id="tpd3" name="name" type="default" valuetype="text"/>
+            <taskproperty id="tpd4" name="begindate" type="default" valuetype="date"/>
+            <taskproperty id="tpd5" name="enddate" type="default" valuetype="date"/>
+            <taskproperty id="tpd6" name="duration" type="default" valuetype="int"/>
+            <taskproperty id="tpd7" name="completion" type="default" valuetype="int"/>
+            <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
+            <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
+            <taskproperty id="tpc1" name="Budget ($)" type="custom" valuetype="double"/>
+        </taskproperties>
+        <task id="0" uid="fbb21238863e427c9d480fa7b9c9818b" name="A1 Environment and platform choice" meeting="false" start="2025-10-01" duration="3" complete="0" expand="true">
+            <depend id="2" type="2" difference="0" hardness="Strong"/>
+            <customproperty taskproperty-id="tpc1" value="670.82"/>
+        </task>
+        <task id="1" uid="1cd9eab5caa848a0a5f3fd5bfe883bb4" name="A2 Software analysis and design" meeting="false" start="2025-10-01" duration="14" complete="0" expand="true" cost-manual-value="436.48" cost-calculated="false">
+            <depend id="3" type="2" difference="0" hardness="Strong"/>
+            <depend id="5" type="2" difference="0" hardness="Strong"/>
+            <customproperty taskproperty-id="tpc1" value="436.48"/>
+        </task>
+        <task id="2" uid="3b5e842bf20f43cd87f6d92a01065a89" name="A3 Hardware configuration and installation" meeting="false" start="2025-10-04" duration="3" complete="0" expand="true" cost-manual-value="340.02" cost-calculated="false">
+            <depend id="8" type="2" difference="0" hardness="Strong"/>
+            <customproperty taskproperty-id="tpc1" value="340.02"/>
+        </task>
+        <task id="3" uid="fddedae395d34787b5a68e08a24e9dd4" name="A4 System coding" meeting="false" start="2025-10-15" duration="7" complete="0" expand="true" cost-manual-value="456.68" cost-calculated="false">
+            <depend id="8" type="2" difference="0" hardness="Strong"/>
+            <customproperty taskproperty-id="tpc1" value="456.68"/>
+        </task>
+        <task id="5" uid="6547078b17ad4d89838b287d7616ba96" name="A5 System testing" meeting="false" start="2025-10-15" duration="3" complete="0" expand="true">
+            <depend id="7" type="2" difference="0" hardness="Strong"/>
+            <customproperty taskproperty-id="tpc1" value="320.82"/>
+        </task>
+        <task id="6" uid="567cf9967a514956b460aeb1e5f63db8" name="A6 System documentation" meeting="false" start="2025-10-01" duration="10" complete="0" expand="true">
+            <depend id="7" type="2" difference="0" hardness="Strong"/>
+            <customproperty taskproperty-id="tpc1" value="1086.97"/>
+        </task>
+        <task id="7" uid="ac9c01cb846f410b9448708258f90fb9" name="A7 User training" meeting="false" start="2025-10-18" duration="2" complete="0" expand="true">
+            <customproperty taskproperty-id="tpc1" value="357.01"/>
+        </task>
+        <task id="8" uid="e043c0cb1ec14aa68252f35f257c5bdc" name="A8 System deployment" meeting="false" start="2025-10-22" duration="5" complete="0" expand="true">
+            <customproperty taskproperty-id="tpc1" value="293.68"/>
+        </task>
+    </tasks>
+    <resources/>
+    <allocations/>
+    <vacations/>
+    <previous/>
+    <roles roleset-name="Default"/>
+</project>
